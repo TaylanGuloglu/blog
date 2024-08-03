@@ -14,7 +14,7 @@ const commentRoute = require("./routes/comments");
 const notificationRoute = require("./routes/notifications");
 const searchRoute = require("./routes/search");
 //const startNotificationCleanupJob = require("./jobs/notificationScheduler")
-
+console.log("hello for the github commit :(");
 const app = express();
 
 dotenv.config();
