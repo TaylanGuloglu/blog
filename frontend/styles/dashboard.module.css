@@ -1,0 +1,32 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.contentArea {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: white;
+    color: black;
+    font-size: 2.5rem;
+    /* background: linear-gradient(110deg, #8971f2, #ffffff); */
+}
+
+/* Responsive ayarları */
+@media (max-width: 768px) {
+    .dashboardContainer {
+        flex-direction: column;
+    }
+
+    .mainContent {
+        flex-direction: column;
+    }
+}

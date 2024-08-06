@@ -1,0 +1,64 @@
+/* login.module.css */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab); /* Daha canlı arka plan */
+  background-size: cover;
+}
+
+.formWrapper {
+  background-color: rgba(0, 0, 0, 0.8); /* Formun arka planını biraz daha koyulaştırdık */
+  padding: 3rem; /* Padding arttırıldı */
+  border-radius: 20px;
+  text-align: center;
+  width: 450px; /* Genişlik arttırıldı */
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 28px; /* Font boyutu arttırıldı */
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Input alanları arasındaki boşluk arttırıldı */
+}
+
+.input {
+  padding: 0.75rem; /* Padding arttırıldı */
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 18px; /* Font boyutu arttırıldı */
+  outline: none;
+}
+
+.input::placeholder {
+  color: #bbb;
+}
+
+.button {
+  padding: 0.75rem; /* Padding arttırıldı */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px; /* Font boyutu arttırıldı */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 16px; /* Font boyutu arttırıldı */
+}

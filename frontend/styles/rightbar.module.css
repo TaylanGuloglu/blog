@@ -1,0 +1,27 @@
+.rightbar {
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+}
+
+.rightbar h2 {
+  margin-top: 0;
+}
+
+.rightbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rightbar ul li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .rightbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}

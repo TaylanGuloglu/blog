@@ -63,15 +63,19 @@ router.put("/:id", auth, async (req, res) => {
     }
 
     const isUserExists = await User.findOne({
-      $or: [{ email: req.body.email }, { username: req.body.username }],
+      $or: [
+        { email: req.body.email },
+        { username: req.body.username }
+      ],
+      _id: { $ne: req.params.id }  
     });
-
+    
     if (isUserExists) {
-      return res
-        .status(400)
-        .json("User with the same email or username already exists");
+      return res.status(400).json({
+        message: "User with the same email or username already exists",
+      });
     }
-
+    
     if (username) user.username = username;
     if (email) user.email = email;
     if (profilePicture) user.profilePicture = profilePicture;
@@ -86,6 +90,7 @@ router.put("/:id", auth, async (req, res) => {
     await user.save();
     res.status(200).json({ message: "User Updated Successfully", user: other });
   } catch (error) {
+    console.error(error);
     res.status(500).json(error);
   }
 });

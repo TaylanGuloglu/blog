@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #ffffff5e;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
